@@ -156,10 +156,6 @@ function availableSlotsInMinutes(
 function availableTimeSlotsForBooking(
   durationInMinutes: number
 ): AvailableSlot[] {
-  if (typeof durationInMinutes !== "number") {
-    throw new Error("Duration is expected to be a number");
-  }
-
   const { photographers } = calendar;
 
   const availableTimeSlotsInMinutes = photographers.map((photographer) => {
