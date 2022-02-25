@@ -82,11 +82,6 @@ const calendar: Calendar = {
   ],
 };
 
-function isInRange(start: Date, end: Date, date: Date): boolean {
-  const inRange = isWithinInterval(date, { start, end });
-  return inRange;
-}
-
 function availableSlotsInMinutes(
   availabilities: Availability[],
   bookings: Booking[],
