@@ -1,0 +1,21 @@
+{
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2021"
+    ],
+    "target": "ES2019",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": true,
+  }
+}
