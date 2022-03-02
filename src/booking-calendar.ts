@@ -191,7 +191,7 @@ function availableTimeSlotsForBooking(
           ends: addMinutes(
             new Date(timeSlot.startDate),
             durationInMinutes
-          ).toUTCString(),
+          ).toISOString(),
         },
       } as AvailableSlot;
     })
